@@ -54,7 +54,7 @@ if not model_type == 'YOLO Model':
         # YOLOv8 Model
         if model_type == 'YOLOv8':
             from ultralytics import YOLO
-            model = YOLO(path_model_file)
+            model = YOLO('https://github.com/nigport/streamlit-yolo/blob/master/best.pt')
 
         # Load Class names
         class_labels = model.names
